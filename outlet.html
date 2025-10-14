@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Outlet | Sport Club do Recife</title>
+  <meta name="description" content="Outlet oficial do Sport Club do Recife. Descontos reais em camisas, treino, infantil e acessórios. Estoques limitados.">
+  <meta property="og:title" content="Outlet | Sport Club do Recife">
+  <meta property="og:description" content="Descontos exclusivos no Outlet do Leão. Últimas peças.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./icons/1.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/sport-recife-logo-escudo-1.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css"/>
+  <link rel="stylesheet" href="./styles/outlet.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-side nav-left">
+        <li><a href="index.html#lancamentos">LANÇAMENTOS</a></li>
+        <li><a href="index.html#masculino">MASCULINO</a></li>
+        <li><a href="index.html#feminino">FEMININO</a></li>
+      </ul>
+      <a href="index.html#home" class="logo" aria-label="Sport Club do Recife - Início">
+        <img src="./icons/sport-recife-logo-escudo-1.png" alt="Sport Club do Recife" class="logo-img" width="44" height="44"/>
+      </a>
+      <ul class="nav-side nav-right">
+        <li><a href="index.html#infantil">INFANTIL</a></li>
+        <li><a href="index.html#acessorios">ACESSÓRIOS</a></li>
+        <li><a href="#outlet">OUTLET</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="outlet-hero">
+    <div class="outlet-hero-inner">
+      <span class="outlet-eyebrow">Outlet Oficial</span>
+      <h1 class="outlet-title">Descontos de até 60%</h1>
+      <p class="outlet-sub">Últimas peças das temporadas recentes. Camisas oficiais, treino, lifestyle, infantil e acessórios. Estoques limitados e troca fácil.</p>
+    </div>
+  </section>
+
+  <div class="breadcrumbs">
+    <div class="wrap">
+      <a href="index.html">Início</a> › Outlet
+    </div>
+  </div>
+
+  <main class="outlet-wrap" id="outlet">
+    <aside class="filters">
+      <div class="filter-card">
+        <div class="searchbar">
+          <input type="search" id="q" placeholder="Buscar no outlet"/>
+        </div>
+
+        <h3 class="filter-title">Categorias</h3>
+        <div class="checkline"><input type="checkbox" id="cat-camisas"><label for="cat-camisas">Camisas Oficiais</label></div>
+        <div class="checkline"><input type="checkbox" id="cat-treino"><label for="cat-treino">Linha Treino</label></div>
+        <div class="checkline"><input type="checkbox" id="cat-lifestyle"><label for="cat-lifestyle">Lifestyle</label></div>
+        <div class="checkline"><input type="checkbox" id="cat-infantil"><label for="cat-infantil">Infantil</label></div>
+        <div class="checkline"><input type="checkbox" id="cat-acessorios"><label for="cat-acessorios">Acessórios</label></div>
+
+        <div class="filter-group">
+          <h3 class="filter-title">Tamanhos</h3>
+          <div class="swatch-row">
+            <label class="size">PP</label>
+            <label class="size">P</label>
+            <label class="size">M</label>
+            <label class="size">G</label>
+            <label class="size">GG</label>
+            <label class="size">XG</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3 class="filter-title">Cores</h3>
+          <div class="swatch-row">
+            <span class="color-swatch" style="background:#ce0e2d"></span>
+            <span class="color-swatch" style="background:#000"></span>
+            <span class="color-swatch" style="background:#ffd400"></span>
+            <span class="color-swatch" style="background:#ffffff"></span>
+            <span class="color-swatch" style="background:#1f4fef"></span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3 class="filter-title">Preço</h3>
+          <div class="price-range">
+            <input type="number" min="0" placeholder="Mín">
+            <span>—</span>
+            <input type="number" min="0" placeholder="Máx">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3 class="filter-title">Desconto</h3>
+          <div class="checkline"><input type="checkbox" id="off10"><label for="off10">10% ou mais</label></div>
+          <div class="checkline"><input type="checkbox" id="off30"><label for="off30">30% ou mais</label></div>
+          <div class="checkline"><input type="checkbox" id="off50"><label for="off50">50% ou mais</label></div>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="mobile-toggle">
+        <button class="viewbtn" id="btn-filtros">Filtros</button>
+        <button class="viewbtn" id="btn-ordenar">Ordenar</button>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <span>6 itens</span>
+          <span class="tag">Frete Grátis acima de R$ 299 <button aria-label="fechar">×</button></span>
+          <span class="tag">Troca em 30 dias <button aria-label="fechar">×</button></span>
+        </div>
+        <div class="toolbar-right">
+          <select class="select" id="sort">
+            <option value="recomendados">Recomendados</option>
+            <option value="menor-preco">Menor preço</option>
+            <option value="maior-preco">Maior preço</option>
+            <option value="desconto">Maior desconto</option>
+            <option value="novidades">Mais recentes</option>
+          </select>
+          <button class="viewbtn" id="view-grid">Grade</button>
+          <button class="viewbtn" id="view-list">Lista</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/camisa2526.jpg" alt="Camisa Oficial I 25/26">
+            <span class="badge">-40%</span>
+            <span class="badge secondary">Últimas M e G</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Camisa Oficial I 25/26</h3>
+            <div class="p-meta"><span class="stars">★★★★★</span><span>128 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 239,90</span><span class="price-old">R$ 399,90</span><span class="price-off">-40%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#ce0e2d" aria-checked="true"></button>
+              <button class="swatch" style="background:#000"></button>
+              <button class="swatch" style="background:#ffd400"></button>
+            </div>
+            <div class="sizes">
+              <button class="size">P</button>
+              <button class="size">M</button>
+              <button class="size">G</button>
+              <button class="size" aria-disabled="true">GG</button>
+            </div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/camisaII2526.jpg" alt="Camisa Oficial II 25/26">
+            <span class="badge">-35%</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Camisa Oficial II 25/26</h3>
+            <div class="p-meta"><span class="stars">★★★★☆</span><span>86 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 259,90</span><span class="price-old">R$ 399,90</span><span class="price-off">-35%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#f6ff00" aria-checked="true"></button>
+              <button class="swatch" style="background:#000"></button>
+            </div>
+            <div class="sizes">
+              <button class="size">PP</button>
+              <button class="size">P</button>
+              <button class="size">M</button>
+              <button class="size">G</button>
+            </div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/camisatreino.jpg" alt="Camiseta Treino Dry">
+            <span class="badge">-50%</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Camiseta Treino Dry</h3>
+            <div class="p-meta"><span class="stars">★★★★☆</span><span>64 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 89,90</span><span class="price-old">R$ 179,90</span><span class="price-off">-50%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#ce0e2d" aria-checked="true"></button>
+              <button class="swatch" style="background:#1f4fef"></button>
+            </div>
+            <div class="sizes">
+              <button class="size">P</button>
+              <button class="size">M</button>
+              <button class="size">G</button>
+              <button class="size">GG</button>
+            </div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/moletomumbro.jpg" alt="Moletom Umbro Diamond Essential">
+            <span class="badge">-25%</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Moletom Umbro Diamond Essential</h3>
+            <div class="p-meta"><span class="stars">★★★★★</span><span>45 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 224,90</span><span class="price-old">R$ 299,90</span><span class="price-off">-25%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#000" aria-checked="true"></button>
+              <button class="swatch" style="background:#ce0e2d"></button>
+            </div>
+            <div class="sizes">
+              <button class="size">P</button>
+              <button class="size">M</button>
+              <button class="size" aria-disabled="true">G</button>
+              <button class="size" aria-disabled="true">GG</button>
+            </div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/camisainfafntil.jpg" alt="Camisa Infantil Rubro-Negra">
+            <span class="badge">-30%</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Camisa Infantil Rubro-Negra</h3>
+            <div class="p-meta"><span class="stars">★★★★★</span><span>31 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 139,90</span><span class="price-old">R$ 199,90</span><span class="price-off">-30%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#ce0e2d" aria-checked="true"></button>
+              <button class="swatch" style="background:#000"></button>
+            </div>
+            <div class="sizes">
+              <button class="size">4</button>
+              <button class="size">6</button>
+              <button class="size">8</button>
+              <button class="size">10</button>
+            </div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-card">
+          <div class="p-media">
+            <img src="./icons/outlet/mochila.jpg" alt="Sacola Sport 23/24 Umbro Gym Clubes">
+            <span class="badge">-20%</span>
+          </div>
+          <div class="p-body">
+            <h3 class="p-title">Sacola Sport 23/24 Umbro Gym Clubes</h3>
+            <div class="p-meta"><span class="stars">★★★★☆</span><span>19 avaliações</span></div>
+            <div class="p-price"><span class="price-now">R$ 79,90</span><span class="price-old">R$ 99,90</span><span class="price-off">-20%</span></div>
+            <div class="swatches">
+              <button class="swatch" style="background:#000" aria-checked="true"></button>
+              <button class="swatch" style="background:#ffd400"></button>
+            </div>
+            <div class="sizes"></div>
+            <div class="p-actions">
+              <button class="btn-buy">Adicionar</button>
+              <button class="btn-ghost">Favorito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="promo-strip">
+        <span>Use o cupom <b>LEAO10</b> e ganhe 10% OFF extra em pedidos acima de R$ 299</span>
+        <span>Válido até domingo</span>
+      </div>
+
+      <nav class="pagination" aria-label="Paginação">
+        <button class="page" aria-label="Página anterior">‹</button>
+        <button class="page" aria-current="page">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="page" aria-label="Próxima página">›</button>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <img src="./icons/sport-recife-logo-escudo-1.png" alt="Sport Club do Recife" class="footer-logo"/>
+      <p class="footer-tagline">Paixão, raça e tradição rubro-negra.</p>
+      <p class="footer-copy">© 2025 Sport Club do Recife.<br/>Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-columns">
+      <nav class="footer-col">
+        <h4>INSTITUCIONAL</h4>
+        <ul>
+          <li><a href="#sobre">Sobre o Clube</a></li>
+          <li><a href="#socio">Seja Sócio</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col">
+        <h4>AJUDA</h4>
+        <ul>
+          <li><a href="#faq">Dúvidas Frequentes</a></li>
+          <li><a href="#privacidade">Política de Privacidade</a></li>
+          <li><a href="#termos">Termos de Uso</a></li>
+          <li><a href="#entregas">Entregas e Prazos</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>SIGA O LEÃO</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/sportrecife/?hl=pt-br">Instagram</a></li>
+          <li><a href="https://www.facebook.com/sportclubdorecife/?locale=pt_BR">Facebook</a></li>
+          <li><a href="https://www.youtube.com/@tvsportrecife">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@sportrecife">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("scroll",function(){
+      var h=document.querySelector(".header");
+      if(!h)return;
+      if(window.scrollY>8){h.classList.add("scrolled");}else{h.classList.remove("scrolled");}
+    });
+    var btnFiltros=document.getElementById("btn-filtros");
+    if(btnFiltros){
+      btnFiltros.addEventListener("click",function(){
+        var f=document.querySelector(".filters");
+        if(!f)return;
+        f.classList.toggle("open");
+        window.scrollTo({top:f.offsetTop-100,behavior:"smooth"});
+      });
+    }
+    var viewGrid=document.getElementById("view-grid");
+    var viewList=document.getElementById("view-list");
+    var grid=document.getElementById("grid");
+    if(viewGrid&&viewList&&grid){
+      viewGrid.addEventListener("click",function(){grid.style.gridTemplateColumns="repeat(3,1fr)";});
+      viewList.addEventListener("click",function(){grid.style.gridTemplateColumns="1fr";});
+    }
+  </script>
+</body>
+</html>

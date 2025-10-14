@@ -100,8 +100,8 @@ body{
   opacity:0;
   animation:fade 12s infinite ease-in-out;
 }
-.slide-1{background-image:url("./icons/1.jpg");animation-delay:0s}
-.slide-2{background-image:url("./icons/2.jpg");animation-delay:6s}
+.slide-1{background-image:url("../icons/1.jpg");animation-delay:0s}
+.slide-2{background-image:url("../icons/2.jpg");animation-delay:6s}
 
 @keyframes fade{
   0%{opacity:0}
