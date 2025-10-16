@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Outlet | Sport Club do Recife</title>
+  <title>Acessórios | Sport Club do Recife</title>
   <meta name="description" content="Outlet oficial do Sport Club do Recife. Descontos reais em camisas, treino, infantil e acessórios. Estoques limitados.">
   <meta property="og:title" content="Outlet | Sport Club do Recife">
   <meta property="og:description" content="Descontos exclusivos no Outlet do Leão. Últimas peças.">
@@ -255,29 +255,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener("scroll",function(){
-      var h=document.querySelector(".header");
-      if(!h)return;
-      if(window.scrollY>8){h.classList.add("scrolled");}else{h.classList.remove("scrolled");}
-    });
-    var btnFiltros=document.getElementById("btn-filtros");
-    if(btnFiltros){
-      btnFiltros.addEventListener("click",function(){
-        var f=document.querySelector(".filters");
-        if(!f)return;
-        f.classList.toggle("open");
-        window.scrollTo({top:f.offsetTop-100,behavior:"smooth"});
-      });
-    }
-    var viewGrid=document.getElementById("view-grid");
-    var viewList=document.getElementById("view-list");
-    var grid=document.getElementById("grid");
-    if(viewGrid&&viewList&&grid){
-      viewGrid.addEventListener("click",function(){grid.style.gridTemplateColumns="repeat(3,1fr)";});
-      viewList.addEventListener("click",function(){grid.style.gridTemplateColumns="1fr";});
-    }
-  </script>
 </body>
 </html>
